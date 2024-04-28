@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_c inner_c">
+            <h1>
+                <a href="#">
+                    舞者之家
+                </a>
+            </h1>
+                <div class="all_pro">
+                    <a class="type" href="#">热门分类<span class="icon"></span></a>
+                    <div class="kind ">
+                        <div class="kind_inner  inner_c">
+                            <ul class="inn_nav">
+                                <li><a href="#">遗传学</a></li>
+                                <li><a href="#">蛋白质</a></li>
+                                <li><a href="#">核酸</a></li>
+                                <li><a href="#">序列分析</a></li>
+                                <li><a href="#">结构分析</a></li>
+                                <li><a href="#">组学</a></li>
+                                <li><a href="#">病毒学和疫苗设计</a></li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="header_nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="video.html">工具 </a></li>
+                        <li><a href="article.html">域名</a></li>
+                    </ul>
+                </div>
+                <div class="search"></div>
+                <div class="login">
+                    <a href="">登录 </a><span>|</span><a href="">注册 </a>
+                </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box_text">
+            <div class="box_text_content">
+                <input type="text" placeholder="在这里输入你想要查找的内容" name="text" id="text" value="" autofocus="autofocus"/>
+                <input type="button" name="bdyx" id="btn" value="立即搜索"/>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_c inner_c">
+            <div class="f_top">
+                <div class="copy">
+                    <a href="#">
+                        <img src="images/logo1.png" alt="">
+                    </a>
+                    <p>
+                        生物信息学工具库包括了一系列的软件、数据库和在线工具，它们在生物信息学的各个方面发挥着重要作用。
+                    </p>
+                </div>
+             
+                <dl class="about">
+                    <dt>关于我们</dt>
+                    <dd>生物工具</dd>
+                    <dd>使用指南</dd>
+                    <dd>   问题 </dd>
+    
+                </dl>
+         
+            </div>
+            <div class="f_bottom">
+                <div class="f_icon">
+                    <p>生物.com</p>
+                    <div>
+                        <img src="images/img81.png" alt="">
+                        <img src="images/img82.png" alt="">
+                        <img src="images/img83.png" alt="">
+                        <img src="images/img84.png" alt="">
+                        <img src="images/img85.png" alt="">
+                        <img src="images/img86.png" alt="">
+                        <img src="images/img87.png" alt="">
+                    </div>
+                </div>
+                <div class="f_right">
+                    <img src="images/img881.png" alt="">
+                    <img src="images/img891.png" alt="">
+                    <img src="images/img901.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fix_top">
+        <a href="#">
+            <p>↑</p>
+        </a>
+    </div>
+</body>
+<style>
+    .box {
+        width:100%;
+        padding-top: 200px;
+        padding-left: 5%;
+        height: 436px;
+        background-color: #d4d4d4;
+    }
+    .box_text {
+        width: 100%;
+        height: 36px;
+    }
+
+    .box_text_content {
+        width: 640px;
+        height: 36px;
+        margin: 0 auto;
+    }
+
+    #text { /*input框的样式*/
+        width: 540px;
+        height: 36px;
+        box-sizing: border-box;
+        margin-top: 3px;
+        text-indent: 4px;
+        outline: none;
+    }
+</style>
+</html>
+<script type="text/javascript">
+    var index=0;
+    //改变图片
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("abc");
+        var b=document.getElementsByClassName("def");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+            b[i].style.color="#FFF";
+        }
+        a[index].style.display='block';
+        b[index].style.color="#C78A49";
+    }
+    setInterval(ChangeImg,2000);
+
+    var otext = document.getElementById("text");
+    ose = document.querySelector("#search");
+    lis = document.getElementsByClassName("li1");
+    otext.onkeyup = function () {
+        ose.style.display = otext.value ? "block" : "none";
+        var osc = document.createElement("script");
+        osc.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" + otext.value;
+        document.body.appendChild(osc);
+        if (event.keyCode == 13) {
+            window.location.href = "https://www.baidu.com/s?wd=" + otext.value
+        }
+    }
+    function iptShow(thisId) {
+        otext.value = arr[thisId].innerHTML;
+        window.location.href = "https://www.baidu.com/s?wd=" + otext.value
+    }
+
+    btn.onclick = function () {
+        var otext = document.getElementById("text").value;
+        if (otext == "" || otext == null) {
+            alert('请输入内容再查询');
+        } else {
+            window.location.href = "https://www.baidu.com/s?wd=" + otext
+        }
+    }
+</script>

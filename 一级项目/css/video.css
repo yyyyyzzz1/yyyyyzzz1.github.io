@@ -1,0 +1,130 @@
+.content{
+    padding-top: 68px;
+    background-color: #F2F2F2;
+}
+
+.content .content_inner{
+    background-color: #FFF;
+    padding:0 10px;
+    width: 1120px;
+}
+
+.content .content_inner .bread_nav{
+    padding-top: 30px;
+    border-bottom: 1px solid #DDD;
+    color: #555;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.content .content_inner .s_type{
+    padding: 30px 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.content .content_inner .s_type table{
+    width: 100%;
+    border: 1px solid #DDD;
+    border-collapse: separate;
+    border-radius: 4px;
+    line-height: 52px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.content .content_inner .s_type table .row1 td,.content .content_inner .s_type table .row1 th{
+    border-bottom: 1px solid #ddd;
+}
+
+.content .content_inner .s_type table .line1{
+    width: 90px;
+    text-align: center;
+    font-weight: 600;
+    border-right: 1px solid #ddd ;
+}
+
+.content .content_inner .s_type table td{
+    border-left: 1px solid #ddd;
+}
+
+.content .content_inner .s_type .row1 .line11{
+    text-align: center;
+    font-size: 15px;
+    line-height: 50px;
+    color: #999;
+    width: 1050px;
+}
+
+
+.content .content_inner .s_type .row1  input::placeholder {
+    font-size: 15px;
+    color: #999;
+  }
+
+.content .content_inner .s_video{
+    overflow: hidden;
+}
+
+.content .content_inner .s_video .sort{
+    float: left;
+    color: #999;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.content .content_inner .s_video .sort a{
+    padding: 3px 8px;
+    border: 1px solid #D6D6D6;
+    margin: 0 5px;
+}
+
+.content .content_inner .s_video .amount{
+    float: right;
+    font-size: 14px;
+}
+
+.content .content_inner .s_video .amount span{
+    color:#999 ;
+}
+
+.content .content_inner .a_video{
+    padding: 50px 0;
+    position: relative;
+}
+
+.content .a_video .toolbox{
+    padding-left: 7%;
+    padding-top: 3%;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 100px;
+    width: auto;
+    position: relative;
+    background: #eef2f7;
+  
+}
+
+.content .content_inner .a_video .page{
+ 
+    position: absolute;
+    bottom: 1%;
+    right: 15px;
+}
+
+.content .content_inner .a_video .page a{
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+.content .content_inner .a_video .page span{
+    color: #8a90a3;
+}
+
+.content .content_inner .a_video .page a.cur{
+    background-color: #9DAFB8;
+    color: #fff;
+}

@@ -1,0 +1,40 @@
+.content .content_inner{
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.content .content_inner .comp_left{
+    float: left;
+}
+
+.content .content_inner .comp_right{
+    float: right;
+}
+
+.content .content_inner .comp_pic{
+    width: 482px;
+    padding: 0 33px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    transition: all 0.4s ease 0s;
+}
+
+.content .content_inner .comp_pic:hover{
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5) ;
+
+}
+
+.content .content_inner .comp_pic .pic{
+    padding: 54px 0 37px 0 ;
+    border-bottom: 1px solid #ddd;
+}
+
+.content .content_inner .comp_pic img{
+    width: 100%;
+}
+
+.content .content_inner .comp_pic .name {
+    text-align: center;
+    padding: 15px 0;
+}

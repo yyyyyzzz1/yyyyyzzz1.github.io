@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_c inner_c">
+            <h1>
+                <a href="#">
+                    舞者之家
+                </a>
+            </h1>
+                <div class="all_pro">
+                    <a class="type" href="#">舞蹈类别<span class="icon"></span></a>
+                    <div class="kind ">
+                        <div class="kind_inner  inner_c">
+                            <ul class="inn_nav">
+                                <li><a href="#">遗传学</a></li>
+                                <li><a href="#">蛋白质</a></li>
+                                <li><a href="#">核酸</a></li>
+                                <li><a href="#">序列分析</a></li>
+                                <li><a href="#">结构分析</a></li>
+                                <li><a href="#">组学</a></li>
+                                <li><a href="#">病毒学和疫苗设计</a></li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="header_nav">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="video.html">工具 </a></li>
+                        <li><a href="article.html">域名</a></li>
+                    </ul>
+                </div>
+            <a href="search.html"><div class="search"></div></a>
+                <div class="login">
+                    <a href="">登录 </a><span>|</span><a href="">注册 </a>
+                </div>
+        </div>
+    </div>
+    <div class="uk-grid"style="padding-top: 100px">
+        <div class="uk-width-1-3"></div>
+        <div class="uk-width-1-3">
+            <div style="width: 350px;
+                        height: 300px;
+                        background-color: #e6d6c6;
+                        margin: 0 auto;
+                        position: relative;
+                        padding-top: 20px;
+                        box-shadow: 0 1px 1px black;">
+                <div class="big" style="width: 300px;
+                                    height: 250px;
+                                    padding-top: 20px;
+                                    background-color: #e2d5c9;
+                                    margin: 0 auto;">
+                    <center>
+                        <form class="uk-form uk-width-medium-1-3" style="text-align: center;
+line-height: 59px">
+                            <fieldset>
+                                <legend>登录</legend>
+                            </fieldset>
+                        </form>
+                    </center>
+                    <div class="uk-grid">
+                        <div class="uk-width-1-6"></div>
+                        <form class="uk-form uk-width-medium-1-3" style="padding-left: 50px;
+margin-bottom: 20px">
+                            <fieldset>
+                                <div class="uk-form-row">
+                                    <input type="text" placeholder="email/phone number/name" data-cip-id="cIPJQ342845641">
+                                </div>
+                                <hr class="hr1"  color="#f8f8f8">
+                                <div class="uk-form-row">
+                                    <input type="password" placeholder="enter your password" data-cip-id="cIPJQ342845642">
+                                </div>
+                                <hr class="hr1" color="#f8f8f8">
+                                <div class="uk-form-row">
+                                    <label><input type="checkbox"> remember</label>
+                                </div>
+                                <div class="uk-form-row">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-6"></div>
+                                        <div class="uk-button-group">
+                                            <button style="width: 60px" id="btnLorgin" class="uk-button uk-button-primary" >登录</button>
+                                            <button style="width: 60px" class="uk-button" href="register.html"><a href="register.html">注册</a></button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+
+                    <div class="top">
+                        <div class="img1"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-width-1-3"></div>
+    </div>
+    <div class="footer">
+        <div class="footer_c inner_c">
+            <div class="f_top">
+                <div class="copy">
+                    <a href="#">
+                        <img src="images/logo1.png" alt="">
+                    </a>
+                    <p>
+                        生物信息学工具库包括了一系列的软件、数据库和在线工具，它们在生物信息学的各个方面发挥着重要作用。
+                    </p>
+                </div>
+         
+                <dl class="about">
+                    <dt>关于我们</dt>
+                    <dd>生物工具</dd>
+                    <dd>使用指南</dd>
+                    <dd>   问题 </dd>
+    
+                </dl>
+         
+            </div>
+            <div class="f_bottom">
+                <div class="f_icon">
+                    <p>生物.com</p>
+                    <div>
+                        <img src="images/img81.png" alt="">
+                        <img src="images/img82.png" alt="">
+                        <img src="images/img83.png" alt="">
+                        <img src="images/img84.png" alt="">
+                        <img src="images/img85.png" alt="">
+                        <img src="images/img86.png" alt="">
+                        <img src="images/img87.png" alt="">
+                    </div>
+                </div>
+                <div class="f_right">
+                    <img src="images/img881.png" alt="">
+                    <img src="images/img891.png" alt="">
+                    <img src="images/img901.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fix_top">
+        <a href="#">
+            <p>↑</p>
+        </a>
+    </div>
+</body>
+</html>
+<script src="./lib/jquery.js"></script>
+
+<script>
+    
+    $(function () {
+
+// 发起 GET 请求
+$('#btnLorgin').on('click', function () {
+  $.ajax({
+    method: 'GET',
+    url: 'http://ajax.frontend.itheima.net:3006/api/get',
+    data: {
+      name: 'zs',
+      age: 20
+    },
+    success: function (res) {
+      console.log(res)
+    }
+  })
+})
+
+// 发起 POST 请求
+$('#btnPOST').on('click', function () {
+  $.ajax({
+    method: 'POST',
+    url: 'http://ajax.frontend.itheima.net:3006/api/post',
+    data: {
+      name: 'zs',
+      age: 20
+    },
+    success: function (res) {
+      console.log(res)
+    }
+  })
+})
+})
+
+</script>

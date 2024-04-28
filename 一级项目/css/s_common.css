@@ -1,0 +1,18 @@
+.content{
+    padding-top: 68px;
+    background-color: #F2F2F2;
+}
+
+.content .content_inner{
+    background-color: #FFF;
+    padding:0 10px;
+    width: 1120px;
+}
+
+.content .content_inner .bread_nav{
+    padding-top: 30px;
+    border-bottom: 1px solid #DDD;
+    color: #555;
+    line-height: 40px;
+    font-size: 14px;
+}
